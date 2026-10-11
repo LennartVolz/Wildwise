@@ -1,0 +1,9 @@
+services:
+  - type: web
+    name: wildwise
+    runtime: docker
+    plan: free
+    healthCheckPath: /healthz
+    envVars:
+      - key: API_NINJAS_KEY
+        sync: false

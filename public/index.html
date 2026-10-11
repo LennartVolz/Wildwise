@@ -1,0 +1,80 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="theme-color" content="#f5f4ee">
+    <meta name="description" content="Discover fascinating animal facts. Search for an animal and explore its habitat, diet, lifespan, and more.">
+    <title>Wildwise — Discover the world of animals</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Manrope:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="/styles.css">
+    <script src="/app.js" defer></script>
+  </head>
+  <body>
+    <header class="topbar">
+      <a class="brand" href="/" aria-label="Wildwise home">
+        <span class="brand-mark" aria-hidden="true">✳</span>
+        <span>wildwise<span class="brand-period">.</span></span>
+      </a>
+      <span class="topbar-note"><span class="live-dot"></span> A little closer to nature</span>
+    </header>
+
+    <main>
+      <section class="hero" aria-labelledby="hero-title">
+        <div class="hero-copy">
+          <p class="eyebrow"><span class="eyebrow-line"></span> ONE SMALL QUESTION, A BIG WIDE WORLD</p>
+          <h1 id="hero-title">What will you<br><span>discover?</span></h1>
+          <p class="hero-description">From tiny wonders to giants of the wild, find out what makes every animal extraordinary.</p>
+
+          <form id="search-form" class="search-form">
+            <label class="sr-only" for="animal-input">Which animal are you curious about?</label>
+            <span class="search-icon" aria-hidden="true">⌕</span>
+            <input id="animal-input" name="animal" type="search" maxlength="80" placeholder="Which animal are you curious about?" autocomplete="off" required>
+            <button type="submit">Explore <span aria-hidden="true">↗</span></button>
+          </form>
+          <div class="suggestions">
+            <span>TRY SEARCHING</span>
+            <button class="suggestion-chip" type="button" data-query="red fox">Red fox</button>
+            <button class="suggestion-chip" type="button" data-query="octopus">Octopus</button>
+            <button class="suggestion-chip" type="button" data-query="hummingbird">Hummingbird</button>
+          </div>
+        </div>
+        <div class="hero-art" aria-label="Abstract illustration of a green, leafy landscape" role="img">
+          <div class="art-sun"></div>
+          <div class="art-label"><span>01 / 03</span><span>WILD &amp; WONDERFUL</span></div>
+          <span class="art-leaf leaf-one">✳</span>
+          <span class="art-leaf leaf-two">✳</span>
+          <span class="art-leaf leaf-three">✳</span>
+          <span class="art-caption">Wonder is waiting<br>everywhere.</span>
+        </div>
+      </section>
+
+      <section id="result-section" class="result-section" aria-live="polite" aria-busy="false" hidden>
+        <div id="result-content"></div>
+      </section>
+
+      <section class="curiosity" aria-label="Did you know">
+        <div class="curiosity-title">
+          <span class="mini-sparkle" aria-hidden="true">✳</span>
+          <div><p class="eyebrow">ALWAYS SOMETHING TO MARVEL AT</p><h2>Nature is full<br>of surprises.</h2></div>
+        </div>
+        <div class="curiosity-stat">
+          <span class="stat-number">8.7<span>M</span></span>
+          <p>species are estimated to live<br>on our planet.</p>
+        </div>
+        <div class="curiosity-aside">
+          <span aria-hidden="true">↗</span>
+          <p>Every animal has<br>a story to tell.</p>
+        </div>
+      </section>
+    </main>
+
+    <footer>
+      <a class="brand footer-brand" href="/"><span class="brand-mark" aria-hidden="true">✳</span><span>wildwise<span class="brand-period">.</span></span></a>
+      <p>Made with curiosity. Animal facts by API Ninjas.</p>
+      <span>© 2026 WILDWISE</span>
+    </footer>
+  </body>
+</html>
