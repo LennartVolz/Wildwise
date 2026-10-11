@@ -40,10 +40,10 @@ Create and configure `.env` as shown above, then run:
 docker compose up --build
 ```
 
-Open [http://localhost:3000](http://localhost:3000). To use another local port, set `HOST_PORT`:
+The local Compose service uses the host network so it can use the host's DNS resolver to reach API Ninjas. Open [http://localhost:3000](http://localhost:3000). To use another local port, set `PORT`:
 
 ```sh
-HOST_PORT=8080 docker compose up --build
+PORT=8080 docker compose up --build
 ```
 
 Stop the service with `docker compose down`.
